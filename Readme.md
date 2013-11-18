@@ -12,8 +12,7 @@ get('https://a.klaviyo.com/media/js/learnmarklet.js')
 // null
 
 get('https://a.klaviyo.com/media/js/learnmarklet.js')
-// (function(w){Array.prototype.toJSON&&delete Array.prototype.toJSON;var M;M||(M={});(function(){function a(a){return 10>a?"0"+a:a}function b(a){e.lastIndex=0;return e.test(a)?'"'+a.replace(e,function(a){var b=i[a];return"string"===typeof b?b:"\\u"+("0000"+a.charCodeAt(0).toString(16)).slice(-4)})+'"':'"'+a+'"'}function c(a,d){var e,i,k,u,o=h,m,A=d[a];A&&"object"===typeof A&&"function"===typeof A.toJSON&&(A=A.toJSON(a));"function"===typeof n&&(A=n.call(d,a,A));switch(typeof A){case "string":return b(A);
-case "number":return isFinite(A)?""+A:"null";case "boolean":case "null":return""+A;case "object":if(!A)return"null";h+=f;m=[];if("[object Array]"===Object.pr ..
+// (function(w){Array.prototype.toJSON&&delete Array.prototype.toJSON;var M;M||(M={});(function(){function a(a){return 10>a?"0"+a:a}function b(a){e.lastIndex=0;return e.test(a)?'"'+a.replace(e,function(a){var b=i[a];return"string"===typeof b?b:"\\u"+("0000"+a.charCodeAt(0).toString(16)).slice(-4)})+'"':'"'+a+'"'}function c(a,d){var e,i,k,u,o=h,m,A=d[a];A&&"object"===typeof A&&"function"===typeof A.toJSON&&(A=A.toJSON(a));"function"===typeof n&&(A=n.call(d,a,A));switch(typeof A){case "string":return b(A);case "number":return isFinite(A)?""+A:"null";case "boolean":case "null":return""+A;case "object":if(!A)return"null";h+=f;m=[];if("[object Array]"===Object.pr ..
 ```
 
 ## API
