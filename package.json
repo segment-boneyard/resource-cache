@@ -1,7 +1,7 @@
 {
   "name": "resource-cache",
   "version": "0.0.1",
-  "description": "Refreshing script cache",
+  "description": "Refreshing resource cache",
   "keywords": ["script", "cache"],
   "author": "Ilya Volodarsky <ilya@segment.io>",
   "repository": "git://github.com/segmentio/script-cache.git",
