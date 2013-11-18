@@ -1,5 +1,5 @@
 {
-  "name": "script-cache",
+  "name": "resource-cache",
   "version": "0.0.1",
   "description": "Refreshing script cache",
   "keywords": ["script", "cache"],
