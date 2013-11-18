@@ -1,7 +1,8 @@
-
 # script-cache
 
   Caches scripts in memory based on a url key. Will keep the script cached even if its origin is down to avoid frontend SPOF. Will refresh the script on `get` every `refresh` period.
+
+  The cache fetches the scripts in the background and doesn't expose an asynchronous API to prevent performance critical script rendering code for waiting for potentially slow or down origin servers.
 
 ## Example
 
