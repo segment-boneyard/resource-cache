@@ -1,0 +1,19 @@
+{
+  "name": "script-cache",
+  "version": "0.0.1",
+  "description": "Refreshing script cache",
+  "keywords": ["script", "cache"],
+  "author": "Ilya Volodarsky <ilya@segment.io>",
+  "repository": "git://github.com/segmentio/script-cache.git",
+  "devDependencies": {
+    "mocha": "~1.14.0",
+    "should": "*"
+  },
+  "main": "./lib",
+  "dependencies": {
+    "ms": "~0.6.1",
+    "lru-cache": "~2.3.1",
+    "defaults": "~1.0.0",
+    "request": "~2.27.0"
+  }
+}
