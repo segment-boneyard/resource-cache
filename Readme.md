@@ -1,13 +1,13 @@
-# script-cache
+# resource-cache
 
-  Caches scripts in memory based on a url key. Will keep the script cached even if its origin is down to avoid frontend SPOF. Will refresh the script on `get` every `refresh` period.
+  Caches resources in memory based on a url key. Will keep the resource cached even if its origin is down to avoid frontend SPOF. Will refresh the resource on `get` every `refresh` period.
 
-  The cache fetches the scripts in the background and doesn't expose an asynchronous API to prevent performance critical script rendering code for waiting for potentially slow or down origin servers.
+  The cache fetches the resources in the background and doesn't expose an asynchronous API to prevent performance critical resource rendering code for waiting for potentially slow or down origin servers.
 
 ## Example
 
 ```js
-var cache = require('script-cache')();
+var cache = require('resource-cache')();
 
 get('https://a.klaviyo.com/media/js/learnmarklet.js')
 // null
@@ -20,19 +20,19 @@ get('https://a.klaviyo.com/media/js/learnmarklet.js')
 
 ### cache(options)
 
-  Create a script cache with custom `options`:
+  Create a resource cache with custom `options`:
 
 ```js
 {
-  "max": 10000, // allow maximum of 10,000 scripts
-  "refresh": ms('4m'), // get the script again every 4m
+  "max": 10000, // allow maximum of 10,000 resources
+  "refresh": ms('4m'), // get the resource again every 4m
   "timeout": ms('1m') // timeout fetch after 1 minute
 }
 ```
 
 ### .get(url)
 
-  Get the script associated with `url`. Returns null if that script isn't cached yet. Kicks off a grab if its there.
+  Get the resource associated with `url`. Returns null if that resource isn't cached yet. Kicks off a grab if its there.
 
 ## License
 

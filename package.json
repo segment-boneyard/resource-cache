@@ -1,10 +1,10 @@
 {
   "name": "resource-cache",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Refreshing resource cache",
   "keywords": ["script", "cache"],
   "author": "Ilya Volodarsky <ilya@segment.io>",
-  "repository": "git://github.com/segmentio/script-cache.git",
+  "repository": "git://github.com/segmentio/resource-cache.git",
   "devDependencies": {
     "mocha": "~1.14.0",
     "should": "*"

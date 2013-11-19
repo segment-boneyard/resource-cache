@@ -1,7 +1,7 @@
 var assert = require('assert');
 var Cache = require('..');
 
-describe('script-cache', function () {
+describe('resource-cache', function () {
 
   var url = 'https://a.klaviyo.com/media/js/learnmarklet.js';
 
